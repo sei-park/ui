@@ -25,43 +25,9 @@
 </head>
 
 <style>
-    /* .pagination {
-        width: 260px;
-        position: relative;
-        left: -50%;
-        transform: translateX(50%);
-    }
-
-    .group-code {
-        transform: translateX(20%);
-    }
-
-    .group-name {
-        transform: translateX(-22%);
-        text-align: center;
-    }
-
-    .alternate-code {
-        transform: translateX(20%);
-        color: transparent;
-    }
-
-    .codeName-eng {
-        transform: translateX(20%);
-        color: transparent;
-    }
-
-    .codeUse {
-        transform: translateX(10%);
-    }
-
-    .order {
-        transform: translateX(15%);
-    }
-
-    .regDate {
-        color: transparent;
-    } */
+    .container {
+        margin-left: -20px;
+    } 
 
     .pagination {
         padding-left: 35%;
@@ -1298,8 +1264,8 @@
                                                 </tbody><!-- end tbody -->
                                             </table><!-- end table -->
                                         </div><!-- end table responsive -->
-                                    </div><!-- end row -->  
-                                    
+                                    </div><!-- end row -->
+
                                     <div class="row g-0 text-center text-sm-start"><!--g-0-->
                                         <div class="gy-3 col-12 pagecol"><!--col-sm-6-->
                                             <ul class="pagination pagination-rounded">
@@ -1330,15 +1296,24 @@
                                             </ul><!-- end ul -->
                                         </div><!-- end col -->
 
+                                        <!-- 하단 버튼 -->
                                         <div class="col-md-1 bottom-button">
-                                            <button><i class="bi bi-x-lg"></i></button>
-                                            <button><i class="bi bi-trash"></i></button>
+                                            <button type="button" class="btn btn-danger"><i
+                                                    class="bi bi-x-lg"></i></button>
+                                            <button type="button" class="btn btn-danger"><i
+                                                    class="bi bi-trash"></i></button>
                                         </div>
 
+                                        <div class="col-md-10"></div>
+
                                         <div class="col-md-1 bottom-button-second">
-                                            <button><i class="bi bi-file-earmark-excel"></i></button>
-                                            <button><i class="bi bi-plus-lg"></i></button>
+                                            <button type="button" class="btn btn-success"><i
+                                                    class="bi bi-file-earmark-excel"></i></button>
+                                            <button type="button" class="btn btn-primary"><i
+                                                    class="bi bi-plus-lg"></i></button>
                                         </div>
+
+
                                     </div><!-- end row -->
 
                                 </div>
