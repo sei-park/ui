@@ -4,7 +4,7 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>User List | Dashonic - Admin & Dashboard Template</title>
+    <title>Form Validation | Dashonic - Admin & Dashboard Template</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Pichforest" name="author" />
@@ -18,55 +18,7 @@
     <!-- App Css-->
     <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
-
-
-
 </head>
-
-<style>
-    /* .pagination {
-        width: 260px;
-        position: relative;
-        left: -50%;
-        transform: translateX(50%);
-    }
-
-    .group-code {
-        transform: translateX(20%);
-    }
-
-    .group-name {
-        transform: translateX(-22%);
-        text-align: center;
-    }
-
-    .alternate-code {
-        transform: translateX(20%);
-        color: transparent;
-    }
-
-    .codeName-eng {
-        transform: translateX(20%);
-        color: transparent;
-    }
-
-    .codeUse {
-        transform: translateX(10%);
-    }
-
-    .order {
-        transform: translateX(15%);
-    }
-
-    .regDate {
-        color: transparent;
-    } */
-
-    .pagination {
-        padding-left: 35%;
-    }
-</style>
 
 
 <body>
@@ -958,568 +910,295 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-flex align-items-center justify-content-between">
-                                <h4 class="mb-0">User List</h4>
+                                <h4 class="mb-0">Form Validation</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
-                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Contacts</a></li>
-                                        <li class="breadcrumb-item active">User List</li>
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Forms</a></li>
+                                        <li class="breadcrumb-item active">Form Validation</li>
                                     </ol>
                                 </div>
 
                             </div>
+
+
+                            <!-- end page title -->
+
+                            <div class="row">
+                                <div class="col-xl-6">
+                                    <div class="card">
+                                        <div class="card-header justify-content-between d-flex align-items-center">
+                                            <h4 class="card-title">Bootstrap Validation - Custom Style</h4>
+                                            <a href="https://getbootstrap.com/docs/5.1/forms/validation/#custom-styles"
+                                                target="_blank" class="btn btn-sm btn-soft-secondary">Docs <i
+                                                    class="mdi mdi-arrow-right align-middle"></i></a>
+                                        </div><!-- end card header -->
+                                        <div class="card-body">
+                                            <form class="needs-validation" novalidate>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="mb-3">
+                                                            <label class="form-label" for="validationCustom01">First
+                                                                name</label>
+                                                            <input type="text" class="form-control"
+                                                                id="validationCustom01" placeholder="First name"
+                                                                value="Mark" required>
+                                                            <div class="valid-feedback">
+                                                                Looks good!
+                                                            </div>
+                                                        </div>
+                                                    </div><!-- end col -->
+                                                    <div class="col-md-6">
+                                                        <div class="mb-3">
+                                                            <label class="form-label" for="validationCustom02">Last
+                                                                name</label>
+                                                            <input type="text" class="form-control"
+                                                                id="validationCustom02" placeholder="Last name"
+                                                                value="Otto" required>
+                                                            <div class="valid-feedback">
+                                                                Looks good!
+                                                            </div>
+                                                        </div>
+                                                    </div><!-- end col -->
+                                                </div><!-- end row -->
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="mb-3">
+                                                            <label class="form-label"
+                                                                for="validationCustom03">City</label>
+                                                            <input type="text" class="form-control"
+                                                                id="validationCustom03" placeholder="City" required>
+                                                            <div class="invalid-feedback">
+                                                                Please provide a valid city.
+                                                            </div>
+                                                        </div>
+                                                    </div><!-- end col -->
+                                                    <div class="col-md-4">
+                                                        <div class="mb-3">
+                                                            <label class="form-label"
+                                                                for="validationCustom04">State</label>
+                                                            <input type="text" class="form-control"
+                                                                id="validationCustom04" placeholder="State" required>
+                                                            <div class="invalid-feedback">
+                                                                Please provide a valid state.
+                                                            </div>
+                                                        </div>
+                                                    </div><!-- end col -->
+                                                    <div class="col-md-4">
+                                                        <div class="mb-3">
+                                                            <label class="form-label"
+                                                                for="validationCustom05">Zip</label>
+                                                            <input type="text" class="form-control"
+                                                                id="validationCustom05" placeholder="Zip" required>
+                                                            <div class="invalid-feedback">
+                                                                Please provide a valid zip.
+                                                            </div>
+                                                        </div>
+                                                    </div><!-- end col -->
+                                                </div><!-- end row -->
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <div class="mb-3">
+                                                            <div class="form-check">
+                                                                <input type="checkbox" class="form-check-input"
+                                                                    id="invalidCheck" required>
+                                                                <label class="form-check-label" for="invalidCheck">Agree
+                                                                    to terms and conditions</label>
+                                                                <div class="invalid-feedback">
+                                                                    You must agree before submitting.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div><!-- end col -->
+                                                </div><!-- end row -->
+                                                <button class="btn btn-primary" type="submit">Submit form</button>
+                                            </form><!-- end form -->
+                                        </div><!-- end card body -->
+                                    </div><!-- end card -->
+                                </div> <!-- end col -->
+                            </div>
                         </div>
-                    </div>
-                    <!-- end page title -->
+                        </div>
 
-                    <div class="row">
-                        <div> <!--  class="col-lg-12" -->
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div> <!--  class="col-md-10" -->
-
-                                            <from>
-                                                <div class="container"> <!--input 추가-->
-                                                    <div class="row mb-3 align-items-center">
-                                                        <div class="mb-2">
-                                                            <h6>page1 > page2 > Default</h6>
-                                                            <h1>Code</h1>
-                                                        </div>
-                                                        <div class="col-md-2">
-                                                            <select class="form-select"
-                                                                aria-label="Default select example">
-                                                                <option selected>Y</option>
-                                                                <option value="1">N</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="col-md-2">
-                                                            <select class="form-select"
-                                                                aria-label="Default select example">
-                                                                <option selected>Y</option>
-                                                                <option value="1">N</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="col-md-2">
-                                                            <select class="form-select"
-                                                                aria-label="Default select example">
-                                                                <option selected>수정일</option>
-                                                                <option value="1">-</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="col-md-2">
-                                                            <div class="input-group flex-nowrap">
-                                                                <input type="text" class="form-control"
-                                                                    placeholder="2024-06-05" aria-label="Username"
-                                                                    aria-describedby="addon-wrapping">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-2">
-                                                            <div class="input-group flex-nowrap">
-                                                                <input type="text" class="form-control"
-                                                                    placeholder="2024-07-05" aria-label="Username"
-                                                                    aria-describedby="addon-wrapping">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="row mb-3 align-items-center">
-                                                        <div class="col-md-2">
-                                                            <select class="form-select"
-                                                                aria-label="Default select example">
-                                                                <option selected>검색구분</option>
-                                                                <option value="1">-</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="col-md-2">
-                                                            <div class="input-group flex-nowrap ">
-                                                                <input type="text" class="form-control"
-                                                                    placeholder="검색어" aria-label="Username"
-                                                                    aria-describedby="addon-wrapping">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-2" align="left">
-                                                            <button type="button" class="btn btn-outline-dark">
-                                                                <i class="uil-search"></i>
-                                                            </button>
-                                                            <button type="button" class="btn btn-outline-dark">
-                                                                <i class="uil-corner-down-left"></i>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row mb-3">
-                                                    <div class="col-md-2" style="padding-top: 10px;">
-                                                        <h5 class="card-title">Total<span
-                                                                class="text-muted fw-normal ms-2">(834)</span></h5>
-                                                    </div>
-
-                                                    <div class="col-md-8"></div>
-
-                                                    <div class="col-md-2">
-                                                        <select class="form-select" aria-label="Default select example">
-                                                            <option selected>5</option>
-                                                            <option value="1">-</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </from>
-
-
-                                        </div><!--col-md-6 -->
-
-                                        <div class="table-responsive"> <!--리스트 시작-->
-
-                                            <table class="table align-middle table-nowrap table-check">
-                                                <thead>
-                                                    <tr>
-                                                        <th scope="col" style="width: 50p x;">
-                                                            <div class="form-check font-size-16">
-                                                                <input type="checkbox" class="form-check-input"
-                                                                    id="checkAll">
-                                                                <label class="form-check-label" for="checkAll"></label>
-                                                            </div>
-                                                        </th>
-                                                        <th scope="col">#</th>
-                                                        <th scope="col">코드그룹코드</th>
-                                                        <th scope="col">코드그룹이름</th>
-                                                        <th scope="col">코드</th>
-                                                        <th scope="col">대체코드</th>
-                                                        <th scope="col">코드이름</th>
-                                                        <th scope="col">코드이름(영문)</th>
-                                                        <th scope="col">사용</th>
-                                                        <th scope="col">순서</th>
-                                                        <th scope="col">등록일</th>
-                                                        <!-- <th style="width: 80px; min-width: 80px;">Action</th> -->
-                                                    </tr><!-- end tr -->
-                                                </thead><!-- end thead -->
-                                                <tbody>
-                                                    <tr>
-                                                        <th scope="row">
-                                                            <div class="form-check font-size-16">
-                                                                <input type="checkbox" class="form-check-input"
-                                                                    id="contacusercheck1">
-                                                                <label class="form-check-label"
-                                                                    for="contacusercheck1"></label>
-                                                            </div>
-                                                        </th>
-                                                        <td>171</td>
-                                                        <td class="group-code">57</td>
-                                                        <td class="group-name">테테테</td>
-                                                        <td>278</td>
-                                                        <td class="alternate-code">-</td>
-                                                        <td>ㅁㄴㅇㄹ</td>
-                                                        <td class="codeName-eng">-</td>
-                                                        <td class="codeUse">Y</td>
-                                                        <td class="order">1</td>
-                                                        <td>2024-07-17 09:37:10</td>
-                                                    </tr><!-- end tr -->
-                                                    <tr>
-                                                        <th scope="row">
-                                                            <div class="form-check font-size-16">
-                                                                <input type="checkbox" class="form-check-input"
-                                                                    id="contacusercheck2">
-                                                                <label class="form-check-label"
-                                                                    for="contacusercheck2"></label>
-                                                            </div>
-                                                        </th>
-                                                        <td>170</td>
-                                                        <td class="group-code">33</td>
-                                                        <td class="group-name">로그인.로그인UI</td>
-                                                        <td>272</td>
-                                                        <td class="alternate-code">-</td>
-                                                        <td>사용자</td>
-                                                        <td class="codeName-eng">-</td>
-                                                        <td class="codeUse">Y</td>
-                                                        <td class="order">1</td>
-                                                        <td class="regDate">-</td>
-                                                    </tr><!-- end tr -->
-                                                    <tr>
-                                                        <th scope="row">
-                                                            <div class="form-check font-size-16">
-                                                                <input type="checkbox" class="form-check-input"
-                                                                    id="contacusercheck3">
-                                                                <label class="form-check-label"
-                                                                    for="contacusercheck3"></label>
-                                                            </div>
-                                                        </th>
-                                                        <td>169</td>
-                                                        <td class="group-code">33</td>
-                                                        <td class="group-name">로그인.로그인UI</td>
-                                                        <td>273</td>
-                                                        <td class="alternate-code">-</td>
-                                                        <td>관리자</td>
-                                                        <td class="codeName-eng">-</td>
-                                                        <td class="codeUse">Y</td>
-                                                        <td class="order">2</td>
-                                                        <td class="regDate">-</td>
-                                                    </tr>
-                                                    <!-- end tr -->
-                                                    <tr>
-                                                        <th scope="row">
-                                                            <div class="form-check font-size-16">
-                                                                <input type="checkbox" class="form-check-input"
-                                                                    id="contacusercheck4">
-                                                                <label class="form-check-label"
-                                                                    for="contacusercheck4"></label>
-                                                            </div>
-                                                        </th>
-                                                        <td>168</td>
-                                                        <td class="group-code">32</td>
-                                                        <td class="group-name">qna.타입</td>
-                                                        <td>266</td>
-                                                        <td class="alternate-code">-</td>
-                                                        <td>기타</td>
-                                                        <td class="codeName-eng">-</td>
-                                                        <td class="codeUse">Y</td>
-                                                        <td class="order">1</td>
-                                                        <td class="regDate">-</td>
-                                                    </tr><!-- end tr -->
-                                                    <tr>
-                                                        <th scope="row">
-                                                            <div class="form-check font-size-16">
-                                                                <input type="checkbox" class="form-check-input"
-                                                                    id="contacusercheck5">
-                                                                <label class="form-check-label"
-                                                                    for="contacusercheck5"></label>
-                                                            </div>
-                                                        </th>
-                                                        <td>167</td>
-                                                        <td class="group-code">31</td>
-                                                        <td class="group-name">qna.상태</td>
-                                                        <td>262</td>
-                                                        <td class="alternate-code">-</td>
-                                                        <td>미확인</td>
-                                                        <td class="codeName-eng">-</td>
-                                                        <td class="codeUse">Y</td>
-                                                        <td class="order">1</td>
-                                                        <td class="regDate">-</td>
-                                                    </tr><!-- end tr -->
-                                                    <tr>
-                                                        <th scope="row">
-                                                            <div class="form-check font-size-16">
-                                                                <input type="checkbox" class="form-check-input"
-                                                                    id="contacusercheck6">
-                                                                <label class="form-check-label"
-                                                                    for="contacusercheck6"></label>
-                                                            </div>
-                                                        </th>
-                                                        <td>161</td>
-                                                        <td class="group-code">29</td>
-                                                        <td class="group-name">몰.자전거.구동방식</td>
-                                                        <td>253</td>
-                                                        <td class="alternate-code">-</td>
-                                                        <td>인간</td>
-                                                        <td class="codeName-eng">-</td>
-                                                        <td class="codeUse">Y</td>
-                                                        <td class="order">1</td>
-                                                        <td class="regDate">-</td>
-                                                    </tr><!-- end tr -->
-                                                    <tr>
-                                                        <th scope="row">
-                                                            <div class="form-check font-size-16">
-                                                                <input type="checkbox" class="form-check-input"
-                                                                    id="contacusercheck7">
-                                                                <label class="form-check-label"
-                                                                    for="contacusercheck7"></label>
-                                                            </div>
-                                                        </th>
-                                                        <td>160</td>
-                                                        <td class="group-code">29</td>
-                                                        <td class="group-name">몰.자전거.구동방식</td>
-                                                        <td>254</td>
-                                                        <td class="alternate-code">-</td>
-                                                        <td>전기</td>
-                                                        <td class="codeName-eng">-</td>
-                                                        <td class="codeUse">Y</td>
-                                                        <td class="order">2</td>
-                                                        <td class="regDate">-</td>
-                                                    </tr><!-- end tr -->
-                                                    <tr>
-                                                        <th scope="row">
-                                                            <div class="form-check font-size-16">
-                                                                <input type="checkbox" class="form-check-input"
-                                                                    id="contacusercheck8">
-                                                                <label class="form-check-label"
-                                                                    for="contacusercheck8"></label>
-                                                            </div>
-                                                        </th>
-                                                        <td>159</td>
-                                                        <td class="group-code">28</td>
-                                                        <td class="group-name">몰.자전거.타이어</td>
-                                                        <td>248</td>
-                                                        <td class="alternate-code">-</td>
-                                                        <td>클린쳐</td>
-                                                        <td class="codeName-eng">clincher</td>
-                                                        <td class="codeUse">Y</td>
-                                                        <td class="order">1</td>
-                                                        <td class="regDate">-</td>
-                                                    </tr><!-- end tr -->
-                                                    <tr>
-                                                        <th scope="row">
-                                                            <div class="form-check font-size-16">
-                                                                <input type="checkbox" class="form-check-input"
-                                                                    id="contacusercheck9">
-                                                                <label class="form-check-label"
-                                                                    for="contacusercheck9"></label>
-                                                            </div>
-                                                        </th>
-                                                        <td>158</td>
-                                                        <td class="group-code">28</td>
-                                                        <td class="group-name">몰.자전거.타이어</td>
-                                                        <td>249</td>
-                                                        <td class="alternate-code">-</td>
-                                                        <td>튜브리스</td>
-                                                        <td class="codeName-eng">Tubeless</td>
-                                                        <td class="codeUse">Y</td>
-                                                        <td class="order">2</td>
-                                                        <td class="regDate">-</td>
-                                                    </tr><!-- end tr -->
-                                                    <tr>
-                                                        <th scope="row">
-                                                            <div class="form-check font-size-16">
-                                                                <input type="checkbox" class="form-check-input"
-                                                                    id="contacusercheck10">
-                                                                <label class="form-check-label"
-                                                                    for="contacusercheck10"></label>
-                                                            </div>
-                                                        </th>
-                                                        <td>157</td>
-                                                        <td class="group-code">28</td>
-                                                        <td class="group-name">몰.자전거.타이어</td>
-                                                        <td>250</td>
-                                                        <td class="alternate-code">-</td>
-                                                        <td>튜블러</td>
-                                                        <td class="codeName-eng">Tubular</td>
-                                                        <td class="codeUse">Y</td>
-                                                        <td class="order">3</td>
-                                                        <td class="regDate">-</td>
-                                                    </tr><!-- end tr -->
-                                                </tbody><!-- end tbody -->
-                                            </table><!-- end table -->
-                                        </div><!-- end table responsive -->
-                                    </div><!-- end row -->  
-                                    
-                                    <div class="row g-0 text-center text-sm-start"><!--g-0-->
-                                        <div class="gy-3 col-12 pagecol"><!--col-sm-6-->
-                                            <ul class="pagination pagination-rounded">
-                                                <!--pagination-rounded justify-content-center justify-content-sm-end mb-sm-0-->
-                                                <li class="page-item disabled">
-                                                    <a href="#" class="page-link"><i
-                                                            class="mdi mdi-chevron-left"></i></a>
-                                                </li>
-                                                <li class="page-item">
-                                                    <a href="#" class="page-link">1</a>
-                                                </li>
-                                                <li class="page-item active">
-                                                    <a href="#" class="page-link">2</a>
-                                                </li>
-                                                <li class="page-item">
-                                                    <a href="#" class="page-link">3</a>
-                                                </li>
-                                                <li class="page-item">
-                                                    <a href="#" class="page-link">4</a>
-                                                </li>
-                                                <li class="page-item">
-                                                    <a href="#" class="page-link">5</a>
-                                                </li>
-                                                <li class="page-item">
-                                                    <a href="#" class="page-link"><i
-                                                            class="mdi mdi-chevron-right"></i></a>
-                                                </li>
-                                            </ul><!-- end ul -->
-                                        </div><!-- end col -->
-
-                                        <div class="col-md-1 bottom-button">
-                                            <button><i class="bi bi-x-lg"></i></button>
-                                            <button><i class="bi bi-trash"></i></button>
+                        <footer class="footer">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <script>document.write(new Date().getFullYear())</script> &copy; Dashonic.
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="text-sm-end d-none d-sm-block">
+                                            Crafted with <i class="mdi mdi-heart text-danger"></i> by <a
+                                                href="https://Pichforest.com/" target="_blank"
+                                                class="text-reset">Pichforest</a>
                                         </div>
-
-                                        <div class="col-md-1 bottom-button-second">
-                                            <button><i class="bi bi-file-earmark-excel"></i></button>
-                                            <button><i class="bi bi-plus-lg"></i></button>
-                                        </div>
-                                    </div><!-- end row -->
-
+                                    </div>
                                 </div>
-                                <!-- end modal -->
+                            </div>
+                        </footer>
+            
+                    <!-- end main content-->
 
-                            </div><!-- end card body -->
-                        </div><!-- end card -->
-                    </div><!-- end col -->
-                </div><!-- end row -->
+                </div>
+                <!-- END layout-wrapper -->
 
-            </div> <!-- container-fluid -->
-        </div><!--main-content-->
-        <!-- End Page-content -->
+                <!-- Right Sidebar -->
+                <div class="right-bar">
+                    <div data-simplebar class="h-100">
+                        <div class="rightbar-title d-flex align-items-center bg-dark p-3">
 
+                            <h5 class="m-0 me-2 text-white">Theme Customizer</h5>
 
-        <footer class="footer">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <script>document.write(new Date().getFullYear())</script> &copy; Dashonic.
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="text-sm-end d-none d-sm-block">
-                            Crafted with <i class="mdi mdi-heart text-danger"></i> by <a href="https://Pichforest.com/"
-                                target="_blank" class="text-reset">Pichforest</a>
+                            <a href="javascript:void(0);" class="right-bar-toggle-close ms-auto">
+                                <i class="mdi mdi-close noti-icon"></i>
+                            </a>
                         </div>
-                    </div>
+
+                        <!-- Settings -->
+                        <hr class="m-0" />
+
+                        <div class="p-4">
+                            <h6 class="mb-3">Layout</h6>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="layout" id="layout-vertical"
+                                    value="vertical">
+                                <label class="form-check-label" for="layout-vertical">Vertical</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="layout" id="layout-horizontal"
+                                    value="horizontal">
+                                <label class="form-check-label" for="layout-horizontal">Horizontal</label>
+                            </div>
+
+                            <h6 class="mt-4 mb-3">Layout Mode</h6>
+
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="layout-mode" id="layout-mode-light"
+                                    value="light">
+                                <label class="form-check-label" for="layout-mode-light">Light</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="layout-mode" id="layout-mode-dark"
+                                    value="dark">
+                                <label class="form-check-label" for="layout-mode-dark">Dark</label>
+                            </div>
+
+                            <h6 class="mt-4 mb-3">Layout Width</h6>
+
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="layout-width" id="layout-width-fluid"
+                                    value="fluid" onchange="document.body.setAttribute('data-layout-size', 'fluid')">
+                                <label class="form-check-label" for="layout-width-fluid">Fluid</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="layout-width" id="layout-width-boxed"
+                                    value="boxed" onchange="document.body.setAttribute('data-layout-size', 'boxed')">
+                                <label class="form-check-label" for="layout-width-boxed">Boxed</label>
+                            </div>
+
+                            <h6 class="mt-4 mb-3">Layout Position</h6>
+
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="layout-position"
+                                    id="layout-position-fixed" value="fixed"
+                                    onchange="document.body.setAttribute('data-layout-scrollable', 'false')">
+                                <label class="form-check-label" for="layout-position-fixed">Fixed</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="layout-position"
+                                    id="layout-position-scrollable" value="scrollable"
+                                    onchange="document.body.setAttribute('data-layout-scrollable', 'true')">
+                                <label class="form-check-label" for="layout-position-scrollable">Scrollable</label>
+                            </div>
+
+                            <h6 class="mt-4 mb-3">Topbar Color</h6>
+
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="topbar-color" id="topbar-color-light"
+                                    value="light" onchange="document.body.setAttribute('data-topbar', 'light')">
+                                <label class="form-check-label" for="topbar-color-light">Light</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="topbar-color" id="topbar-color-dark"
+                                    value="dark" onchange="document.body.setAttribute('data-topbar', 'dark')">
+                                <label class="form-check-label" for="topbar-color-dark">Dark</label>
+                            </div>
+
+                            <div id="sidebar-setting">
+                                <h6 class="mt-4 mb-3 sidebar-setting">Sidebar Size</h6>
+
+                                <div class="form-check sidebar-setting">
+                                    <input class="form-check-input" type="radio" name="sidebar-size"
+                                        id="sidebar-size-default" value="default"
+                                        onchange="document.body.setAttribute('data-sidebar-size', 'lg')">
+                                    <label class="form-check-label" for="sidebar-size-default">Default</label>
+                                </div>
+                                <div class="form-check sidebar-setting">
+                                    <input class="form-check-input" type="radio" name="sidebar-size"
+                                        id="sidebar-size-compact" value="compact"
+                                        onchange="document.body.setAttribute('data-sidebar-size', 'md')">
+                                    <label class="form-check-label" for="sidebar-size-compact">Compact</label>
+                                </div>
+                                <div class="form-check sidebar-setting">
+                                    <input class="form-check-input" type="radio" name="sidebar-size"
+                                        id="sidebar-size-small" value="small"
+                                        onchange="document.body.setAttribute('data-sidebar-size', 'sm')">
+                                    <label class="form-check-label" for="sidebar-size-small">Small (Icon View)</label>
+                                </div>
+
+                                <h6 class="mt-4 mb-3 sidebar-setting">Sidebar Color</h6>
+
+                                <div class="form-check sidebar-setting">
+                                    <input class="form-check-input" type="radio" name="sidebar-color"
+                                        id="sidebar-color-light" value="light"
+                                        onchange="document.body.setAttribute('data-sidebar', 'light')">
+                                    <label class="form-check-label" for="sidebar-color-light">Light</label>
+                                </div>
+                                <div class="form-check sidebar-setting">
+                                    <input class="form-check-input" type="radio" name="sidebar-color"
+                                        id="sidebar-color-dark" value="dark"
+                                        onchange="document.body.setAttribute('data-sidebar', 'dark')">
+                                    <label class="form-check-label" for="sidebar-color-dark">Dark</label>
+                                </div>
+                                <div class="form-check sidebar-setting">
+                                    <input class="form-check-input" type="radio" name="sidebar-color"
+                                        id="sidebar-color-brand" value="brand"
+                                        onchange="document.body.setAttribute('data-sidebar', 'brand')">
+                                    <label class="form-check-label" for="sidebar-color-brand">Brand</label>
+                                </div>
+                            </div>
+
+                            <h6 class="mt-4 mb-3">Direction</h6>
+
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="layout-direction"
+                                    id="layout-direction-ltr" value="ltr">
+                                <label class="form-check-label" for="layout-direction-ltr">LTR</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="layout-direction"
+                                    id="layout-direction-rtl" value="rtl">
+                                <label class="form-check-label" for="layout-direction-rtl">RTL</label>
+                            </div>
+
+                        </div>
+
+                    </div> <!-- end slimscroll-menu-->
                 </div>
-            </div>
-        </footer>
-    </div>
-    <!-- end main content-->
+                <!-- /Right-bar -->
 
-    </div>
-    <!-- END layout-wrapper -->
+                <!-- Right bar overlay-->
+                <div class="rightbar-overlay"></div>
 
-    <!-- Right Sidebar -->
-    <div class="right-bar">
-        <div data-simplebar class="h-100">
-            <div class="rightbar-title d-flex align-items-center bg-dark p-3">
+                <!-- JAVASCRIPT -->
+                <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+                <script src="assets/libs/metismenujs/metismenujs.min.js"></script>
+                <script src="assets/libs/simplebar/simplebar.min.js"></script>
+                <script src="assets/libs/feather-icons/feather.min.js"></script>
 
-                <h5 class="m-0 me-2 text-white">Theme Customizer</h5>
+                <script src="assets/js/pages/form-validation.init.js"></script>
 
-                <a href="javascript:void(0);" class="right-bar-toggle-close ms-auto">
-                    <i class="mdi mdi-close noti-icon"></i>
-                </a>
-            </div>
-
-            <!-- Settings -->
-            <hr class="m-0" />
-
-            <div class="p-4">
-                <h6 class="mb-3">Layout</h6>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="layout" id="layout-vertical" value="vertical">
-                    <label class="form-check-label" for="layout-vertical">Vertical</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="layout" id="layout-horizontal"
-                        value="horizontal">
-                    <label class="form-check-label" for="layout-horizontal">Horizontal</label>
-                </div>
-
-                <h6 class="mt-4 mb-3">Layout Mode</h6>
-
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="layout-mode" id="layout-mode-light"
-                        value="light">
-                    <label class="form-check-label" for="layout-mode-light">Light</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="layout-mode" id="layout-mode-dark" value="dark">
-                    <label class="form-check-label" for="layout-mode-dark">Dark</label>
-                </div>
-
-                <h6 class="mt-4 mb-3">Layout Width</h6>
-
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="layout-width" id="layout-width-fluid"
-                        value="fluid" onchange="document.body.setAttribute('data-layout-size', 'fluid')">
-                    <label class="form-check-label" for="layout-width-fluid">Fluid</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="layout-width" id="layout-width-boxed"
-                        value="boxed" onchange="document.body.setAttribute('data-layout-size', 'boxed')">
-                    <label class="form-check-label" for="layout-width-boxed">Boxed</label>
-                </div>
-
-                <h6 class="mt-4 mb-3">Layout Position</h6>
-
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="layout-position" id="layout-position-fixed"
-                        value="fixed" onchange="document.body.setAttribute('data-layout-scrollable', 'false')">
-                    <label class="form-check-label" for="layout-position-fixed">Fixed</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="layout-position" id="layout-position-scrollable"
-                        value="scrollable" onchange="document.body.setAttribute('data-layout-scrollable', 'true')">
-                    <label class="form-check-label" for="layout-position-scrollable">Scrollable</label>
-                </div>
-
-                <h6 class="mt-4 mb-3">Topbar Color</h6>
-
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="topbar-color" id="topbar-color-light"
-                        value="light" onchange="document.body.setAttribute('data-topbar', 'light')">
-                    <label class="form-check-label" for="topbar-color-light">Light</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="topbar-color" id="topbar-color-dark" value="dark"
-                        onchange="document.body.setAttribute('data-topbar', 'dark')">
-                    <label class="form-check-label" for="topbar-color-dark">Dark</label>
-                </div>
-
-                <div id="sidebar-setting">
-                    <h6 class="mt-4 mb-3 sidebar-setting">Sidebar Size</h6>
-
-                    <div class="form-check sidebar-setting">
-                        <input class="form-check-input" type="radio" name="sidebar-size" id="sidebar-size-default"
-                            value="default" onchange="document.body.setAttribute('data-sidebar-size', 'lg')">
-                        <label class="form-check-label" for="sidebar-size-default">Default</label>
-                    </div>
-                    <div class="form-check sidebar-setting">
-                        <input class="form-check-input" type="radio" name="sidebar-size" id="sidebar-size-compact"
-                            value="compact" onchange="document.body.setAttribute('data-sidebar-size', 'md')">
-                        <label class="form-check-label" for="sidebar-size-compact">Compact</label>
-                    </div>
-                    <div class="form-check sidebar-setting">
-                        <input class="form-check-input" type="radio" name="sidebar-size" id="sidebar-size-small"
-                            value="small" onchange="document.body.setAttribute('data-sidebar-size', 'sm')">
-                        <label class="form-check-label" for="sidebar-size-small">Small (Icon View)</label>
-                    </div>
-
-                    <h6 class="mt-4 mb-3 sidebar-setting">Sidebar Color</h6>
-
-                    <div class="form-check sidebar-setting">
-                        <input class="form-check-input" type="radio" name="sidebar-color" id="sidebar-color-light"
-                            value="light" onchange="document.body.setAttribute('data-sidebar', 'light')">
-                        <label class="form-check-label" for="sidebar-color-light">Light</label>
-                    </div>
-                    <div class="form-check sidebar-setting">
-                        <input class="form-check-input" type="radio" name="sidebar-color" id="sidebar-color-dark"
-                            value="dark" onchange="document.body.setAttribute('data-sidebar', 'dark')">
-                        <label class="form-check-label" for="sidebar-color-dark">Dark</label>
-                    </div>
-                    <div class="form-check sidebar-setting">
-                        <input class="form-check-input" type="radio" name="sidebar-color" id="sidebar-color-brand"
-                            value="brand" onchange="document.body.setAttribute('data-sidebar', 'brand')">
-                        <label class="form-check-label" for="sidebar-color-brand">Brand</label>
-                    </div>
-                </div>
-
-                <h6 class="mt-4 mb-3">Direction</h6>
-
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="layout-direction" id="layout-direction-ltr"
-                        value="ltr">
-                    <label class="form-check-label" for="layout-direction-ltr">LTR</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="layout-direction" id="layout-direction-rtl"
-                        value="rtl">
-                    <label class="form-check-label" for="layout-direction-rtl">RTL</label>
-                </div>
-
-            </div>
-
-        </div> <!-- end slimscroll-menu-->
-    </div>
-    <!-- /Right-bar -->
-
-    <!-- Right bar overlay-->
-    <div class="rightbar-overlay"></div>
-
-    <!-- JAVASCRIPT -->
-    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/libs/metismenujs/metismenujs.min.js"></script>
-    <script src="assets/libs/simplebar/simplebar.min.js"></script>
-    <script src="assets/libs/feather-icons/feather.min.js"></script>
-
-    <script src="assets/js/app.js"></script>
+                <script src="assets/js/app.js"></script>
 
 </body>
 
